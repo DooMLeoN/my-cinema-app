@@ -16,7 +16,7 @@ Project description:
   - delete movie sessions by id;
   - get data about user by his email;
 - Unregistered users have access to only two pages:/login /register;
-- Some user data, such as the password, is encrypted; 
+- Some user data, such as the password, is encrypted. 
 That protects personal data even when the database is accessed for intruders.
 
 ## Tools and Technology:
