@@ -15,7 +15,9 @@ Project description:
   - add new: cinema halls, movies and movie sessions;
   - delete movie sessions by id;
   - get data about user by his email;
-- Unregistered users have access to only two pages:/login 
+- Unregistered users have access to only two pages:/login /register;
+- Some user data, such as the password, is encrypted; 
+That protects personal data even when the database is accessed for intruders.
 
 ## Tools and Technology:
 - [Tomcat](https://tomcat.apache.org) - is an open source implementation of the Jakarta Servlet,
@@ -27,22 +29,19 @@ Project description:
 - [Apache Maven](https://maven.apache.org) - is a software project management and comprehension tool.
   Based on the concept of a project object model (POM), Maven can manage a project's build,
   reporting and documentation from a central piece of information;
-- [Java Servlet](https://mvnrepository.com/artifact/javax.servlet/servlet-api) - is the core web specification in the Java Enterprise Platform.
-  This technology allows you to create web applications using the Servlet API to interact with the request/response workflow.
-- [HttpServlet](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServlet.html) - Provides an abstract class to be subclassed to create an HTTP servlet suitable for a Web site.
-  A subclass of HttpServlet must override at least one method, usually one of these: doGet, doPost, doPut, doDelete.
-  Due to technological limitations of jsp pages, we only use doPost and doGet;
-- [Filter](https://www.javatpoint.com/servlet-filter) - A filter is an object that is invoked at the preprocessing
-  and postprocessing of a request;
-- [Jakarta Standard Tag Library (JSTL)](https://jakarta.ee/specifications/tags/) -  is a component of the Java EE Web application development platform.
-  It extends the JSP specification by adding a tag library of JSP tags for common tasks,
-  such as XML data processing, conditional execution,
-  database access, loops and internationalization;
+- [Spring](https://www.javatpoint.com/spring-tutorial) - is a lightweight framework. 
+  It can be thought of as a framework of frameworks because it provides support to various 
+  frameworks such as Struts, Hibernate, Tapestry, EJB, JSF, etc. The framework, in broader 
+  sense, can be defined as a structure where we find solution of the various technical problems.
+- [Validation](https://www.baeldung.com/spring-boot-bean-validation) - When it comes to validating user input, Spring Boot provides strong support for this common, 
+  yet critical, task straight out of the box. Although Spring Boot supports seamless integration with custom validators, 
+  the de-facto standard for performing validation is Hibernate Validator, the Bean Validation framework's reference implementation.
+- [Spring Security](https://docs.spring.io/spring-security/reference/index.html) -  is a framework that provides authentication, 
+  authorization, and protection against common attacks. With first class support for securing both imperative and reactive applications, 
+  it is the de-facto standard for securing Spring-based applications.
 
 ## Instructions:
 - This project requires Tomcat 9.0.5 or newer version and MySQL;
-- The script for creating the database is located in the folder:
-  src/main/resources/init_db.sql;
-- To connect to a database in a class src/main/java/taxi/util/ConnectionUtil.java
+- To connect to a database in file src/main/resources/db.properties
   need to be changed parameters: URL, USERNAME, PASSWORD and JDBC_DRIVER;
 - To configure Tomcat Server in the Deployment section in the Application context line, you need to specify only '/';
