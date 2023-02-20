@@ -15,7 +15,7 @@ Project description:
   - add new: cinema halls, movies and movie sessions;
   - delete movie sessions by id;
   - get data about user by his email;
-- Unregistered users have access to only two pages:/login 
+- Unregistered users have access to only two pages:/login /register 
 
 ## Tools and Technology:
 - [Tomcat](https://tomcat.apache.org) - is an open source implementation of the Jakarta Servlet,
@@ -27,17 +27,7 @@ Project description:
 - [Apache Maven](https://maven.apache.org) - is a software project management and comprehension tool.
   Based on the concept of a project object model (POM), Maven can manage a project's build,
   reporting and documentation from a central piece of information;
-- [Java Servlet](https://mvnrepository.com/artifact/javax.servlet/servlet-api) - is the core web specification in the Java Enterprise Platform.
-  This technology allows you to create web applications using the Servlet API to interact with the request/response workflow.
-- [HttpServlet](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServlet.html) - Provides an abstract class to be subclassed to create an HTTP servlet suitable for a Web site.
-  A subclass of HttpServlet must override at least one method, usually one of these: doGet, doPost, doPut, doDelete.
-  Due to technological limitations of jsp pages, we only use doPost and doGet;
-- [Filter](https://www.javatpoint.com/servlet-filter) - A filter is an object that is invoked at the preprocessing
-  and postprocessing of a request;
-- [Jakarta Standard Tag Library (JSTL)](https://jakarta.ee/specifications/tags/) -  is a component of the Java EE Web application development platform.
-  It extends the JSP specification by adding a tag library of JSP tags for common tasks,
-  such as XML data processing, conditional execution,
-  database access, loops and internationalization;
+
 
 ## Instructions:
 - This project requires Tomcat 9.0.5 or newer version and MySQL;
